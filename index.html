@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="script.js"></script>
+
+<div class="container">
+    <div class="form-box">
+        <h1>Signup</h1>
+        <form id="signup">
+          <div class="input-group">
+            <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+            
+                <input type="text" placeholder="First name" required>
+            </div>
+
+            <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Last name" required>
+            </div>
+
+            <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email" id="email" required>
+                
+                <p id="emailError" class="error-message"></p>
+            </div>
+
+            <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="fa-regular fa-eye-slash"></i>
+                <p id="passwordError" class="error-message"></p>
+            </div>
+
+
+            <div class="input-field">
+            
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                <p id="confirm-passwordError" class="error-message"></p>
+
+            </div>
+
+        
+        <div class="button-field">
+            <button type="submit"><a href="landing.html">Submit</a></button>
+        </div>
+      </div>
+   </form>
+</div>
+</div>
+
+
+   
+
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://files.123freevectors.com/wp-content/original/154540-abstract-coffee-brown-background.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat; 
+    margin: 0;
+   
+}
+nav {
+    position: relative; 
+    width: 100%;
+    height: 10%;
+    background-color: rgb(198, 102, 67);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100%;
+    padding: 0 20px;
+}
+
+.logo {
+    position: relative; 
+    margin-top: 0;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+    
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    color: rgb(53, 2, 2);
+    text-decoration: underline;
+    text-decoration-color:rgb(42, 1, 26);
+    margin: 0 25px;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+h1{
+    margin-top: 60px;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(237, 227, 88);
+}
+p{
+    color: white;
+}
+
+.links a:hover {
+    color: #f0e68c;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid #ede6d6;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2) ;
+    margin:auto;
+    margin-top: 50px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 10px;
+}
+  
+  .carousel-images {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+   .carousel-images img {
+    
+     width: 100%;
+     height: auto; 
+     display: block;
+  }
+
+.carousel-images img.slide {
+    display: block; 
+}
+
+  
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+}
+
+.prev {
+    left: 0; 
+}
+
+.next {
+    right: 0; 
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 1); 
+}
+.rating{
+    text-align: left;
+}
+
+
+.rating-section {
+    text-align: center;
+    margin: 50px;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: burlywood;
+}
+
+.rating {
+    display: inline-block;
+    direction: rtl;
+    font-size: 2rem;
+}
+
+.star {
+    color: #ccc; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star:hover, .star:hover ~ .star {
+    color: gold; 
+}
+
+
+.star.selected, .star.selected ~ .star {
+    color: gold;
+}
+
+.review {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button.submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+    background-color: #218838;
+}
+@media screen and (max-width: 600px)
+
+{
+    h1{
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    .logo img {
+        width: 70px;
+        height: auto;
+    }
+ 
+    .wrapper {
+            flex-direction: column; 
+            align-items: flex-start; 
+        }
+
+        .links {
+            display: block; 
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            background-color: #270303ce; 
+            padding: 10px 0;
+            text-decoration: underline;
+            text-decoration-color: burlywood;
+        }
+
+        .links a {
+            color: rgb(200, 173, 19);
+            margin: 10px 0; 
+            text-align: left; 
+            padding-left: 20px;
+            width: 100%; 
+        }
+       
+}
+ 
+
+    

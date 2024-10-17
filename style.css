@@ -1,0 +1,127 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+   background-image:url( https://eskipaper.com/images/dark-background-4.jpg);
+   background-position: center;
+   background-size: cover;
+   position:relative;
+}
+    
+
+.form-box{
+width: 95%;
+max-width: 450px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background: #fff;
+padding: 50px 50px 60px;
+text-align: center;
+
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    color: rgb(5, 5, 62);
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left:50%;
+    transform: translate(-50%);
+
+}
+
+
+
+.input-field{
+    background:#eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display:flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 20px 15px ;
+    background-color: transparent;
+    border:0;
+    border-radius: 5px
+
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+.input-field i{
+    margin-right: 15px;
+  
+}
+.input-field {
+    position: relative;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+
+.button-field button{   
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+} 
+
+a{
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+    
+}
+    
+    
+
+button:hover {
+    background-color: #218838;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+} 
+.input-field i.fa-eye,
+.input-field i.fa-eye-slash {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
